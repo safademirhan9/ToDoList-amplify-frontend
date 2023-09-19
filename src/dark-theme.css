@@ -1,0 +1,28 @@
+/* src/dark-theme.css */
+
+/* Dark background color for the entire page */
+body {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+  }
+  
+  /* Background color for the input box */
+  .input-group input[type="text"] {
+    background-color: #5b6168; /* Slightly off-white color */
+    color: #f8f9fa; /* Black text color */
+  }
+  
+  /* Background color for to-do items */
+  .list-group-item {
+    background-color: #93a6b8; /* Slightly off-white color */
+    color: #f8f9fa; /* Black text color */
+  }
+
+  .custom-bg-color {
+    background-color: #5b6168; /* Change this to your desired background color */
+  }
+  
+  .custom-text-color {
+    color: #f8f9fa; /* Change this to your desired text color */
+  }
+  

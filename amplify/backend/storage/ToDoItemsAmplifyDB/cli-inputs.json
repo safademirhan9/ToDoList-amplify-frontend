@@ -1,0 +1,10 @@
+{
+  "resourceName": "ToDoItemsAmplifyDB",
+  "tableName": "ToDoItemsAmplifyDB",
+  "partitionKey": {
+    "fieldName": "TaskID",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
