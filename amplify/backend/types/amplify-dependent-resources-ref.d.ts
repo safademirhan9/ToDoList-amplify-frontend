@@ -1,13 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
-  "api": {
-    "ToDoListAPI": {
-      "ApiId": "string",
-      "ApiName": "string",
-      "RootUrl": "string"
-    }
-  },
   "function": {
-    "ToDoApiLambda": {
+    "AmplifyTodoFunction": {
       "Arn": "string",
       "LambdaExecutionRole": "string",
       "LambdaExecutionRoleArn": "string",
@@ -28,7 +21,7 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "storage": {
-    "ToDoItemsAmplifyDB": {
+    "ToDoItemsTable": {
       "Arn": "string",
       "Name": "string",
       "PartitionKeyName": "string",

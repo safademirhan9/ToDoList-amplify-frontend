@@ -1,34 +1,27 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-todofrontend-dev-115418-authRole",
-      "UnauthRoleArn": "arn:aws:iam::692188324085:role/amplify-todofrontend-dev-115418-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::692188324085:role/amplify-todofrontend-dev-115418-authRole",
+      "AuthRoleName": "amplify-todofrontend-dev-213530-authRole",
+      "UnauthRoleArn": "arn:aws:iam::692188324085:role/amplify-todofrontend-dev-213530-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::692188324085:role/amplify-todofrontend-dev-213530-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-todofrontend-dev-115418-deployment",
-      "UnauthRoleName": "amplify-todofrontend-dev-115418-unauthRole",
-      "StackName": "amplify-todofrontend-dev-115418",
-      "StackId": "arn:aws:cloudformation:us-east-1:692188324085:stack/amplify-todofrontend-dev-115418/1fb1c2b0-56ca-11ee-8c65-0e442bc98889",
-      "AmplifyAppId": "d2zoyoy0p0hwi2"
+      "DeploymentBucketName": "amplify-todofrontend-dev-213530-deployment",
+      "UnauthRoleName": "amplify-todofrontend-dev-213530-unauthRole",
+      "StackName": "amplify-todofrontend-dev-213530",
+      "StackId": "arn:aws:cloudformation:us-east-1:692188324085:stack/amplify-todofrontend-dev-213530/50f9b660-571b-11ee-834c-12d5765b30bf",
+      "AmplifyAppId": "d3vjmeejnc1btl"
     },
     "categories": {
       "function": {
-        "ToDoApiLambda": {
-          "deploymentBucketName": "amplify-todofrontend-dev-115418-deployment",
-          "s3Key": "amplify-builds/ToDoApiLambda-31757456653738564668-build.zip"
+        "AmplifyTodoFunction": {
+          "deploymentBucketName": "amplify-todofrontend-dev-213530-deployment",
+          "s3Key": "amplify-builds/AmplifyTodoFunction-6d2f4376613554497166-build.zip"
         }
       },
       "storage": {
-        "ToDoItemsAmplifyDB": {}
-      },
-      "api": {
-        "ToDoListAPI": {}
+        "ToDoItemsTable": {}
       },
       "hosting": {
-        "amplifyhosting": {
-          "appId": "d2zoyoy0p0hwi2",
-          "type": "cicd"
-        },
         "S3AndCloudFront": {}
       }
     }

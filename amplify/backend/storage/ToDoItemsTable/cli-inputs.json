@@ -1,6 +1,6 @@
 {
-  "resourceName": "ToDoItemsAmplifyDB",
-  "tableName": "ToDoItemsAmplifyDB",
+  "resourceName": "ToDoItemsTable",
+  "tableName": "ToDoItemsTable",
   "partitionKey": {
     "fieldName": "TaskID",
     "fieldType": "string"

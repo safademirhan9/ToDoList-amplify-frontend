@@ -1,22 +1,6 @@
 {
-  "api": {
-    "ToDoListAPI": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "function",
-          "resourceName": "ToDoApiLambda"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "API Gateway"
-    }
-  },
   "function": {
-    "ToDoApiLambda": {
+    "AmplifyTodoFunction": {
       "build": true,
       "dependsOn": [
         {
@@ -29,7 +13,7 @@
             "Arn"
           ],
           "category": "storage",
-          "resourceName": "ToDoItemsAmplifyDB"
+          "resourceName": "ToDoItemsTable"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -40,49 +24,28 @@
     "S3AndCloudFront": {
       "providerPlugin": "awscloudformation",
       "service": "S3AndCloudFront"
-    },
-    "amplifyhosting": {
-      "lastPushTimeStamp": "2023-09-19T17:40:11.329Z",
-      "service": "amplifyhosting",
-      "type": "cicd"
     }
   },
   "parameters": {
-    "AMPLIFY_function_ToDoApiLambda_deploymentBucketName": {
+    "AMPLIFY_function_AmplifyTodoFunction_deploymentBucketName": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "ToDoApiLambda"
+          "resourceName": "AmplifyTodoFunction"
         }
       ]
     },
-    "AMPLIFY_function_ToDoApiLambda_s3Key": {
+    "AMPLIFY_function_AmplifyTodoFunction_s3Key": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "ToDoApiLambda"
-        }
-      ]
-    },
-    "AMPLIFY_hosting_amplifyhosting_appId": {
-      "usedBy": [
-        {
-          "category": "hosting",
-          "resourceName": "amplifyhosting"
-        }
-      ]
-    },
-    "AMPLIFY_hosting_amplifyhosting_type": {
-      "usedBy": [
-        {
-          "category": "hosting",
-          "resourceName": "amplifyhosting"
+          "resourceName": "AmplifyTodoFunction"
         }
       ]
     }
   },
   "storage": {
-    "ToDoItemsAmplifyDB": {
+    "ToDoItemsTable": {
       "providerPlugin": "awscloudformation",
       "service": "DynamoDB"
     }
