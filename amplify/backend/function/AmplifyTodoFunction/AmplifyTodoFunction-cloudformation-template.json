@@ -16,13 +16,13 @@
     "s3Key": {
       "Type": "String"
     },
-    "storageToDoItemsTableName": {
+    "storageToDoTableDynamoDBName": {
       "Type": "String",
-      "Default": "storageToDoItemsTableName"
+      "Default": "storageToDoTableDynamoDBName"
     },
-    "storageToDoItemsTableArn": {
+    "storageToDoTableDynamoDBArn": {
       "Type": "String",
-      "Default": "storageToDoItemsTableArn"
+      "Default": "storageToDoTableDynamoDBArn"
     }
   },
   "Conditions": {
@@ -97,12 +97,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "todofrontendLambdaRole2ade048b",
+            "todofrontendLambdaRole4a6bae6a",
             {
               "Fn::Join": [
                 "",
                 [
-                  "todofrontendLambdaRole2ade048b",
+                  "todofrontendLambdaRole4a6bae6a",
                   "-",
                   {
                     "Ref": "env"
@@ -182,14 +182,14 @@
               ],
               "Resource": [
                 {
-                  "Ref": "storageToDoItemsTableArn"
+                  "Ref": "storageToDoTableDynamoDBArn"
                 },
                 {
                   "Fn::Join": [
                     "/",
                     [
                       {
-                        "Ref": "storageToDoItemsTableArn"
+                        "Ref": "storageToDoTableDynamoDBArn"
                       },
                       "index/*"
                     ]

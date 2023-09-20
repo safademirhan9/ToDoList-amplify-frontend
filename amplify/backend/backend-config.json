@@ -1,4 +1,20 @@
 {
+  "api": {
+    "ToDoListAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "AmplifyTodoFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "function": {
     "AmplifyTodoFunction": {
       "build": true,
@@ -13,7 +29,7 @@
             "Arn"
           ],
           "category": "storage",
-          "resourceName": "ToDoItemsTable"
+          "resourceName": "ToDoTableDynamoDB"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -45,7 +61,7 @@
     }
   },
   "storage": {
-    "ToDoItemsTable": {
+    "ToDoTableDynamoDB": {
       "providerPlugin": "awscloudformation",
       "service": "DynamoDB"
     }

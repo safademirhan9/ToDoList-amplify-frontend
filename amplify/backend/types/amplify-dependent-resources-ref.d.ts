@@ -1,4 +1,11 @@
 export type AmplifyDependentResourcesAttributes = {
+  "api": {
+    "ToDoListAPI": {
+      "ApiId": "string",
+      "ApiName": "string",
+      "RootUrl": "string"
+    }
+  },
   "function": {
     "AmplifyTodoFunction": {
       "Arn": "string",
@@ -21,7 +28,7 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "storage": {
-    "ToDoItemsTable": {
+    "ToDoTableDynamoDB": {
       "Arn": "string",
       "Name": "string",
       "PartitionKeyName": "string",

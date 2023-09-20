@@ -1,0 +1,10 @@
+{
+  "resourceName": "ToDoTableDynamoDB",
+  "tableName": "ToDoTableDynamoDB",
+  "partitionKey": {
+    "fieldName": "TaskId",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

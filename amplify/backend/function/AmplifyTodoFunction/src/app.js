@@ -17,13 +17,13 @@ const express = require('express')
 const ddbClient = new DynamoDBClient({ region: process.env.TABLE_REGION });
 const ddbDocClient = DynamoDBDocumentClient.from(ddbClient);
 
-let tableName = "ToDoItemsTable";
+let tableName = "ToDoTableDynamoDB";
 if (process.env.ENV && process.env.ENV !== "NONE") {
   tableName = tableName + '-' + process.env.ENV;
 }
 
 const userIdPresent = false; // TODO: update in case is required to use that definition
-const partitionKeyName = "TaskID";
+const partitionKeyName = "TaskId";
 const partitionKeyType = "S";
 const sortKeyName = "";
 const sortKeyType = "";
